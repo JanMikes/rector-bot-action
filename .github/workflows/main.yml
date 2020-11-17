@@ -5,9 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Rector
     steps:
-      - uses: actions/checkout@v2
 
-      # TODO: prepare php app
+      # Prepare repo -> it will be mounted into container via volume
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@2.8.0
+        with:
+          php-version: 7.4
+          coverage: none
+          tools: composer:v2
 
       # Testing action itself
       - uses: ./
