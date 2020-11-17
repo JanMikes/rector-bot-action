@@ -1,7 +1,5 @@
 #!/bin/sh -l
 
-echo "Hello world"
+ls /rector
 
-echo "${PWD}"
-
-ls -l
+rector process --dry-run --ansi
