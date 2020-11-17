@@ -13,6 +13,7 @@ jobs:
           php-version: 7.4
           coverage: none
           tools: composer:v2
+      - run: composer install
 
       # Testing action itself
       - uses: ./
