@@ -1,5 +1,7 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 
-ls /rector
+set -e
 
-rector process --dry-run --ansi
+/rector/bin/rector process --dry-run --ansi
+
+# TODO: commit + push
