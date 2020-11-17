@@ -1,0 +1,5 @@
+name: 'Rector'
+description: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
